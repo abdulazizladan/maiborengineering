@@ -8,4 +8,10 @@ import { Component } from '@angular/core';
 })
 export class App {
   protected title = 'maiborengineering';
+
+  public isMobileMenuOpen = false;
+
+  public toggleMobileMenu(): void {
+    this.isMobileMenuOpen = !this.isMobileMenuOpen;
+  }
 }
