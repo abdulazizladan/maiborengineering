@@ -1,0 +1,47 @@
+<nav class="bg-white shadow-md fixed w-full z-10">
+    <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+      <div class="flex justify-between h-16 items-center">
+        <!-- Logo -->
+        <div class="flex-shrink-0 flex items-center">
+          <img class="h-10 w-auto" src="./logo.png" alt="Logo" />
+        </div>
+        <!-- Desktop Menu -->
+        <div class="hidden md:flex space-x-8">
+          <a href="#" class="text-gray-700 hover:text-blue-600 font-medium">Home</a>
+          <a href="#" class="text-gray-700 hover:text-blue-600 font-medium">About</a>
+          <a href="#" class="text-gray-700 hover:text-blue-600 font-medium">Services</a>
+          <a href="#" class="text-gray-700 hover:text-blue-600 font-medium">Projects</a>
+          <a href="#" class="text-gray-700 hover:text-blue-600 font-medium">Contact</a>
+        </div>
+        <!-- Mobile menu button -->
+        <div class="md:hidden">
+          <button (click)="toggleMobileMenu()" class="text-gray-700 hover:text-blue-600 focus:outline-none focus:text-blue-600">
+            <svg class="h-8 w-8" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+              <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
+                d="M4 6h16M4 12h16M4 18h16" />
+            </svg>
+          </button>
+        </div>
+      </div>
+    </div>
+    <!-- Mobile Menu -->
+    <div *ngIf="isMobileMenuOpen" class="md:hidden px-4 pb-4">
+        <button href="#" class="block py-2 text-gray-700 hover:text-blue-600 font-medium">Home</button>
+        <button href="#" class="block py-2 text-gray-700 hover:text-blue-600 font-medium">About</button>
+        <button href="#" class="block py-2 text-gray-700 hover:text-blue-600 font-medium">Services</button>
+        <button href="#" class="block py-2 text-gray-700 hover:text-blue-600 font-medium">Projects</button>
+        <button href="#" class="block py-2 text-gray-700 hover:text-blue-600 font-medium">Contact</button>
+    </div>
+  </nav>
+  <div class="pt-20"></div>
+  <!--<main> -->
+    <!-- Your main content here -->
+     <!--
+    <section class="w-full min-h-[calc(100vh-5rem)] flex flex-col items-center justify-center bg-gray-100 gap-5">
+      <h1 class="text-3xl md:text-5xl font-bold text-gray-700 text-center">Site under construction.</h1>
+      <div class="w-64 h-2 mb-8 bg-gray-300 rounded overflow-hidden">
+        <div class="h-full bg-blue-500 animate-progress-bar" style="width: 50%"></div>
+      </div>
+    </section>
+  </main>-->
+  
