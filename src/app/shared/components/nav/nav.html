@@ -7,11 +7,11 @@
         </div>
         <!-- Desktop Menu -->
         <div class="hidden md:flex space-x-8">
-          <a href="#" class="text-gray-700 hover:text-blue-600 font-medium">Home</a>
-          <a href="#" class="text-gray-700 hover:text-blue-600 font-medium">About</a>
-          <a href="#" class="text-gray-700 hover:text-blue-600 font-medium">Services</a>
-          <a href="#" class="text-gray-700 hover:text-blue-600 font-medium">Projects</a>
-          <a href="#" class="text-gray-700 hover:text-blue-600 font-medium">Contact</a>
+          <button routerLink="../" class="text-gray-700 hover:text-blue-600 font-medium cursor-pointer">Home</button>
+          <button routerLink="about" class="text-gray-700 hover:text-blue-600 font-medium cursor-pointer">About</button>
+          <button href="#" class="text-gray-700 hover:text-blue-600 font-medium cursor-pointer">Services</button>
+          <button href="#" class="text-gray-700 hover:text-blue-600 font-medium cursor-pointer">Projects</button>
+          <button href="#" class="text-gray-700 hover:text-blue-600 font-medium cursor-pointer">Contact</button>
         </div>
         <!-- Mobile menu button -->
         <div class="md:hidden">
@@ -26,8 +26,8 @@
     </div>
     <!-- Mobile Menu -->
     <div *ngIf="isMobileMenuOpen" class="md:hidden px-4 pb-4">
-        <button href="#" class="block py-2 text-gray-700 hover:text-blue-600 font-medium">Home</button>
-        <button href="#" class="block py-2 text-gray-700 hover:text-blue-600 font-medium">About</button>
+        <button routerLink="../" class="block py-2 text-gray-700 hover:text-blue-600 font-medium">Home</button>
+        <button routerLink="about" class="block py-2 text-gray-700 hover:text-blue-600 font-medium">About</button>
         <button href="#" class="block py-2 text-gray-700 hover:text-blue-600 font-medium">Services</button>
         <button href="#" class="block py-2 text-gray-700 hover:text-blue-600 font-medium">Projects</button>
         <button href="#" class="block py-2 text-gray-700 hover:text-blue-600 font-medium">Contact</button>
